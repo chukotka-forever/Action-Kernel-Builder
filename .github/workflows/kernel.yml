@@ -45,6 +45,7 @@ jobs:
 
     - name: Compressed as Archive
       run: |
+        cd /home/runner/work/myKernel/
         git clone --depth=1 https://github.com/cd-Seraph/AnyKernel3.git -b master AnyKernel
         cp out/arch/arm64/boot/Image AnyKernel
         python scripts/dtc/libfdt/mkdtboimg.py create AnyKernel/dtbo.img --page_size=4096 out/arch/arm64/boot/dts/vendor/oplus_7325/yupik-21643-overlay.dtbo
