@@ -3,8 +3,8 @@
 set -e -x
 
 # Kernel Source
-KERNEL_SOURCE="https://github.com/ZirgomHaidar/realme_Q3s_Q3t_9-5G-Speed-AndroidS-kernel-source.git"
-KERNEL_BRANCH="temp"
+KERNEL_SOURCE="https://github.com/DemonDrake/kernel_realme_woof.git"
+KERNEL_BRANCH="main"
 KERNEL_DEFCONFIG="vendor/lahaina-qgki_defconfig"
 
 # Prebuilt Clang Toolchain (AOSP)
